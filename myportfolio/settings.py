@@ -11,8 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-
-
+import django_heroku
 
 import os
 
@@ -29,7 +28,7 @@ SECRET_KEY = 'django-insecure-mq#zmrq$h6@emwln$q9r^@!)^c&d6q2drobn*ct1igw=um!nu8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -121,6 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -132,3 +132,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 
+django_heroku.settings(locals())
