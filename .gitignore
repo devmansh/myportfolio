@@ -1,26 +1,19 @@
-# Ignore virtual environment
-venv/
-env/
-
-# Ignore database files
-*.sqlite3
-
-# Ignore bytecode files
+# Python
+*.pyc
 __pycache__/
-*.py[cod]
-
-# Ignore media files (if you're storing user-uploaded files)
-media/
-
-# Ignore static files (if you’re collecting static files locally)
-staticfiles/
-
-# Ignore environment variables
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
 .env
 
-# Ignore IDE/editor specific files
-.vscode/
-.idea/
+# Django
+db.sqlite3
+media/
 
-# Ignore system files
+# macOS
 .DS_Store
+
+# Virtual environment
+env/
