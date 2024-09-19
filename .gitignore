@@ -1,0 +1,26 @@
+# Ignore virtual environment
+venv/
+env/
+
+# Ignore database files
+*.sqlite3
+
+# Ignore bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore media files (if you're storing user-uploaded files)
+media/
+
+# Ignore static files (if you’re collecting static files locally)
+staticfiles/
+
+# Ignore environment variables
+.env
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
